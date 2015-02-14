@@ -1,5 +1,5 @@
 #title{
-    width: 80%;
+    width: 90%;
     height: 100px;
     background-color: #599532;
     opacity: 70;
@@ -13,18 +13,18 @@ html, body{
     background: url("img/background.jpg") no-repeat center;
 }
 
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
 h1{
-    font-family: monospace;
+    font-family: monospace, sans-serif;
     padding-top: 30px;
     padding-bottom: 50px;
     text-align: center;
     vertical-align: middle;
     color: #1E4B00;
-}
-
-#wrapper{
-    min-height: 100%;
-    position: relative;
 }
 
 #content{
@@ -40,6 +40,13 @@ h1{
     -moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.92);
     box-shadow:         0px 7px 16px 0px rgba(50, 50, 50, 0.92);
 }
+
+#footer{
+    -webkit-box-shadow: 0px -11px 20px 0px rgba(50, 50, 50, 0.66);
+    -moz-box-shadow:    0px -11px 20px 0px rgba(50, 50, 50, 0.66);
+    box-shadow:         0px -11px 20px 0px rgba(50, 50, 50, 0.66);
+}
+
 div.routes{
     display: inline-block;
     vertical-align: middle;
@@ -90,7 +97,7 @@ a:hover {
     margin-top: 25px;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: verdana;
+    font-family: verdana, sans-serif;
     background-color: #E4F5A3;
 }
 
@@ -116,7 +123,7 @@ a:hover {
     margin-top: 25px;
     margin-right: 10%;
     margin-left: 10%;
-    font-family: verdana;
+    font-family: verdana, sans-serif;
 }
 
 iframe{
