@@ -2,7 +2,6 @@
     width: 90%;
     height: 100px;
     background-color: #599532;
-    opacity: 70;
     margin: 0 auto;
 }
 
@@ -32,10 +31,10 @@ h1{
     margin-left: 10%;
     margin-top: 25px;
     opacity: 0.9;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
-#title, div.routes, div.resume {
+#title, div.routes, div.resume, .table, .menu {
     -webkit-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.92);
     -moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.92);
     box-shadow:         0px 7px 16px 0px rgba(50, 50, 50, 0.92);
@@ -55,7 +54,6 @@ div.routes{
 }
 
 ul{
-    background: transparent url("/img/map_route.png") no-repeat center;
     font-family: fantasy;
     display: table-row;
     vertical-align: inherit;
@@ -75,7 +73,6 @@ div.resume{
     height: inherit;
     padding-left: 20px;
     background-color: #4e7973;
-    /*background-color: antiquewhite;*/
     font-family: fantasy;
 }
 
@@ -104,19 +101,34 @@ a:hover {
 /*  FOOTER  */
 #footer{
     width:100%;
-    height:80px;
+    height:100px;
     position:absolute;
     bottom:0;
     left:0;
     background: #77a42b;
 }
-/*********************************************************/
-/* MAP
-.map{
-    margin-top: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-}*/
+
+#footer a{
+    background-color:#6fba26;
+    padding:10px;
+    position:relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    text-decoration:none;
+    color:#fff;
+    background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
+    box-shadow: inset 0px -5px 5px 0px #b2f17f, 0px -5px 5px 0px #3d6f0d;
+    border-radius: 5px;
+}
+
+#footer a:active {
+    top:7px;
+    background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
+    box-shadow: inset 0px -1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+    color: #156785;
+    text-shadow: 0px -6px 5px 0px rgba(255,255,255,0.3);
+    background: rgb(44,160,202);
+}
 
 /*  TABLE  */
 .table{
@@ -124,10 +136,6 @@ a:hover {
     margin-right: 10%;
     margin-left: 10%;
     font-family: verdana, sans-serif;
-}
-
-iframe{
-    margin-left: auto;
 }
 
 table, td, th{
