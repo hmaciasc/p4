@@ -13,13 +13,11 @@ body{
     width: 80%;
     height: 100px;
     background-color: #4CAF50;
-    opacity: 70;
     margin: 0 auto;
     z-index: 1;
 }
 
 .title, #content, img {
-    -webkit-box-shadow: 0 7px 16px 0 rgba(50, 50, 50, 0.92);
     box-shadow:         0 7px 16px 0 rgba(50, 50, 50, 0.92);
 }
 
@@ -71,7 +69,6 @@ img{
     left:0;
     background: #388E3C;
     z-index: 1;
-    -webkit-box-shadow: 0 -11px 20px 0 rgba(50, 50, 50, 0.66);
     box-shadow:         0 -11px 20px 0 rgba(50, 50, 50, 0.66);
 }
 
@@ -83,17 +80,14 @@ img{
     font-size:12px;
     text-decoration:none;
     color:#fff;
-    background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
     box-shadow: inset 0 -5px 5px 0 #b2f17f, 0 -5px 5px 0 #3d6f0d;
     border-radius: 5px;
 }
 
 #footer a:active {
     top:7px;
-    background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
     box-shadow: inset 0 -1px 0 #b2f17f, inset 0 -1px 0 #3d6f0d;
     color: #156785;
-    text-shadow: 0 -6px 5px 0 rgba(255,255,255,0.3);
     background: rgb(44,160,202);
 }
 
@@ -101,7 +95,6 @@ img{
     *{
         margin: auto;
         float: none;
-        -webkit-box-shadow: none;
         box-shadow:         none;
         background: transparent !important;
         color: black !important;
@@ -154,9 +147,5 @@ img{
     }
     img{
         max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
     }
 }
