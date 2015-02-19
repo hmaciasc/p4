@@ -1,7 +1,7 @@
 #title{
     width: 90%;
     height: 100px;
-    background-color: #599532;
+    background-color: #4CAF50;
     margin: 0 auto;
 }
 
@@ -9,12 +9,21 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
-    background: url("img/background.jpg") no-repeat center;
+    background: url("img/background.jpg") no-repeat fixed center;
 }
 
 .wrapper{
     min-height: 100%;
     position: relative;
+}
+
+#description{
+    margin-top: 25px;
+    background-color: #A5D6A7;
+    font-family: verdana, 'Open Sans', sans-serif;
+    opacity: 0.9;
+    padding: 25px;
+    margin-bottom: 25px;
 }
 
 h1{
@@ -34,23 +43,27 @@ h1{
     padding-bottom: 100px;
 }
 
-#title, div.routes, div.resume, .table, .menu {
-    -webkit-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.92);
-    -moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.92);
-    box-shadow:         0px 7px 16px 0px rgba(50, 50, 50, 0.92);
+#title, #routes, #resume, #description, .table, .menu {
+    -webkit-box-shadow: 0 7px 16px 0 rgba(50, 50, 50, 0.92);
+    box-shadow:         0 7px 16px 0 rgba(50, 50, 50, 0.92);
 }
 
 #footer{
-    -webkit-box-shadow: 0px -11px 20px 0px rgba(50, 50, 50, 0.66);
-    -moz-box-shadow:    0px -11px 20px 0px rgba(50, 50, 50, 0.66);
-    box-shadow:         0px -11px 20px 0px rgba(50, 50, 50, 0.66);
+    -webkit-box-shadow: 0 -11px 20px 0 rgba(50, 50, 50, 0.66);
+    box-shadow:         0 -11px 20px 0 rgba(50, 50, 50, 0.66);
 }
 
-div.routes{
+#routes{
     display: inline-block;
     vertical-align: middle;
-    background-color: #4e7973;
+    background-color: #A5D6A7;
     width: 35%;
+    padding: 25px;
+}
+
+#routes p{
+    font-family: verdana, 'Open Sans', sans-serif;
+    text-decoration-line: underline;
 }
 
 ul{
@@ -66,23 +79,24 @@ li{
     list-style-type: none;
 }
 
-div.resume{
+#resume{
     display: inline-block;
     float: right;
     width: 35%;
     height: inherit;
-    padding-left: 20px;
-    background-color: #4e7973;
+    background-color: #A5D6A7;
     font-family: fantasy;
+    padding: 25px;
 }
 
 a:link{
     color: black;
+    background-color: #00E676;
     text-decoration: none;
 }
 
 a:visited {
-    color: crimson;
+    color: black;
     text-decoration: none;
 }
 
@@ -102,10 +116,11 @@ a:hover {
 #footer{
     width:100%;
     height:100px;
+    font-family: verdana, 'Open Sans', sans-serif;
     position:absolute;
     bottom:0;
     left:0;
-    background: #77a42b;
+    background: #388E3C;
 }
 
 #footer a{
@@ -117,16 +132,16 @@ a:hover {
     text-decoration:none;
     color:#fff;
     background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
-    box-shadow: inset 0px -5px 5px 0px #b2f17f, 0px -5px 5px 0px #3d6f0d;
+    box-shadow: inset 0 -5px 5px 0 #b2f17f, 0 -5px 5px 0 #3d6f0d;
     border-radius: 5px;
 }
 
 #footer a:active {
     top:7px;
     background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
-    box-shadow: inset 0px -1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+    box-shadow: inset 0 -1px 0 #b2f17f, inset 0 -1px 0 #3d6f0d;
     color: #156785;
-    text-shadow: 0px -6px 5px 0px rgba(255,255,255,0.3);
+    text-shadow: 0 -6px 5px 0 rgba(255,255,255,0.3);
     background: rgb(44,160,202);
 }
 
@@ -135,19 +150,87 @@ a:hover {
     margin-top: 25px;
     margin-right: 10%;
     margin-left: 10%;
-    font-family: verdana, sans-serif;
+    font-family: verdana, 'Open Sans', sans-serif;
+}
+
+table a:link{
+    color: #156785;
 }
 
 table, td, th{
     border: 1px solid black;
     padding: 15px;
     border-collapse: collapse;
-    background-color: #89a360;
+    background-color: #66BB6A;
 }
 
 th{
     font-family: monospace;
     font-style: oblique;
     font-size: larger;
-    background-color: #68a345;
+    background-color: #43A047;
+}
+
+@media print {
+    *{
+        margin: auto;
+        float: none;
+        -webkit-box-shadow: none;
+        box-shadow:         none;
+        background: transparent !important;
+        color: black !important;
+        text-shadow: none !important;
+    }
+
+    .table{
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    #content{
+        page-break-inside: avoid;
+    }
+    a:link, a:visited {
+        color: #781351;
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    h1 {
+        font-size: 24pt;
+        page-break-after: avoid;
+    }
+
+    h2 {
+        font-size: 14pt;
+        margin-top: 25px;
+        page-break-after: avoid;
+    }
+
+    p {
+        font-family: georgia, serif;
+        font-size: 14px;
+        color: blue;
+    }
+
+    table{
+        padding: 0;
+        border: hidden;
+        border-collapse: separate;
+    }
+
+    tr, img{
+        page-break-inside: avoid;
+    }
+    img{
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
 }
