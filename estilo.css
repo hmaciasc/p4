@@ -119,25 +119,33 @@ a:hover {
     bottom:0;
     left:0;
     background: #388E3C;
+
 }
 
 #footer a{
+    height:260px;
+    width:500px;
     background-color:#6fba26;
-    padding:10px;
     position:relative;
-    font-family: 'Open Sans', sans-serif;
+    font-family: verdana, 'Open Sans', sans-serif;
     font-size:12px;
     text-decoration:none;
     color:#fff;
-    box-shadow: inset 0 -5px 5px 0 #b2f17f, 0 -5px 5px 0 #3d6f0d;
+    margin:11px;
+    padding:12px;
     border-radius: 5px;
+    border-width:15px;
+}
+
+#footer a:hover{
+    background: #81C784;
 }
 
 #footer a:active {
     top:7px;
     box-shadow: inset 0 -1px 0 #b2f17f, inset 0 -1px 0 #3d6f0d;
-    color: #156785;
-    background: rgb(44,160,202);
+    color: #ffffff;
+    background: #66BB6A;
 }
 
 /*  TABLE  */
@@ -148,15 +156,10 @@ a:hover {
     font-family: verdana, 'Open Sans', sans-serif;
 }
 
-table a:link{
-    color: #156785;
-}
-
 table, td, th{
     border: 1px solid black;
     padding: 15px;
     border-collapse: collapse;
-    background-color: #66BB6A;
 }
 
 th{
@@ -164,6 +167,13 @@ th{
     font-style: oblique;
     font-size: larger;
     background-color: #43A047;
+}
+
+tr:nth-child(odd){
+    background-color: #66BB6A;
+}
+tr:nth-child(even){
+    background-color: #A5D6A7;
 }
 
 @media print {
